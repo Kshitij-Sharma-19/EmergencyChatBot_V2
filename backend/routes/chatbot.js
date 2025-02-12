@@ -4,7 +4,7 @@ const pool = require("../database.js");
 const { GoogleGenerativeAI } = require("@google/generative-ai"); 
 const router = express.Router();
 
-const genAI = new GoogleGenerativeAI("AIzaSyDkYw6Mal5CEm0pe5Wfx3tBpo3b8Lftwwg"); 
+const genAI = new GoogleGenerativeAI("Your_Google_API_key"); 
 const model = genAI.getGenerativeModel({ model: "gemini-pro" }); 
 
 router.post("/", async (req, res) => {
